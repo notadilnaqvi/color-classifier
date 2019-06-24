@@ -103,7 +103,7 @@ h4.heading{
 	background-color: #A0DB8E;
 }
 #blueButton{
-	background-color: #CAE3EC;
+	background-color: rgb(164, 216, 235);
 }
 #yellowButton{
 	background-color: #F9F960;
@@ -118,10 +118,10 @@ h4.heading{
 	background-color: #FFA500 ;
 }
 #brownButton{
-	background-color: #B75454;
+	background-color: rgb(167, 98, 98);
 }
 #greyButton{
-	background-color: #E3ECCA ;
+	background-color: rgb(230, 230, 230) ;
 }
 
 .colorBox{
