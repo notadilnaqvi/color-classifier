@@ -1,0 +1,173 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Montserrat;
+}
+
+body{
+	background-color: rgb(250, 250, 250);
+	height: 100%;
+	padding-top: 5%;
+}
+
+.left{
+	
+	width: 25%;
+	float: left;
+	margin: 0%;
+	padding: 0% 2.5%;
+}
+
+.middle{
+	width: 50%;
+	float: left;
+}
+
+.right{
+	width: 25%;
+	float: left;
+	padding: 0% 2.5%;
+}
+
+.bottom{
+	width: 100%;
+	clear: both;
+	padding: 2.5% 2.5%;
+}
+
+p.instructions{
+	font-size: 10pt;
+}
+
+#noSpam{
+	background-color: #FF6666;
+	font-size: 8pt;
+	padding: 5px;
+	border-radius: 3px;
+	color: white;
+}
+
+h4.heading{
+	font-size: 11pt;
+	margin-bottom: 10px;
+}
+.button{
+	color: #191919;
+	font-weight: 600;
+	padding: 10px;
+	text-align: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: inline;
+	margin: 10px;
+	border-radius: 3px;
+}
+.button:hover{
+	box-shadow: 4px 4px 8px #c0c0c0; 
+}
+.button:active{
+	transform: translateY(2px);
+	border: none;
+	outline: none;
+}
+.layerOne{
+	/* border: 1px blue solid; */
+	width: 403px;
+	margin: auto;
+	margin-top: 20px;
+}
+.layerTwo{
+	/* border: 1px blue solid; */
+	width: 323px;
+	margin: auto;
+}
+.layerThree{
+	/* border: 1px blue solid; */
+	width: 206px;
+	margin: auto;
+}
+#redButton{
+	background-color: #FF6666;
+}
+#greenButton{
+	background-color: #A0DB8E;
+}
+#blueButton{
+	background-color: #CAE3EC;
+}
+#yellowButton{
+	background-color: #F9F960;
+}
+#purpleButton{
+	background-color: #BF7FBF ;
+}
+#pinkButton{
+	background-color: #FFCDC1;
+}
+#orangeButton{
+	background-color: #FFA500 ;
+}
+#brownButton{
+	background-color: #B75454;
+}
+#greyButton{
+	background-color: #E3ECCA ;
+}
+
+.colorBox{
+	width: 80%;
+	height: 200px;
+	border-radius: 5px;
+	color: rgb(200,200,200);
+	background-color: rgb(200,200,200);
+	margin: 0% 10%;
+}
+
+@media only screen and (max-width: 832px){
+	.left{
+		clear: both;
+		width: 100%;
+	}
+	.middle{
+		clear: both;
+		width: 100%;
+	}
+	.right{
+		clear: both;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	h4.heading{
+		text-align: center;
+	}
+
+	p.instructions{
+		line-height: 1;
+		font-size: 10pt;
+		text-align: center;
+	}
+	
+	#noSpam{
+		text-align: center;
+	}
+
+	.colorBox{
+		height: 150px;
+	}
+
+	.button{
+		font-size: 9pt;
+	}
+
+	.layerThree{
+		margin-bottom: 20px;
+	}
+
+	.joke{
+		text-align: center;
+		font-size: 11pt;
+	}
+}

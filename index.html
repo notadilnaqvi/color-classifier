@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="jokes.txt"></script>
+	<script src="app.js"></script>
+	<title>Colour Classifier</title>
+</head>
+<body>
+	<div class="left">
+		<h4 class="heading">[ instructions ]</h4>
+		<p class="instructions">click the button that closely resembles the color of the rectangle <br><br> the next color will automatically show (refresh page if it doesn't) <br><br> go through as many colors as you can!<br><br>every 5th click displays a ~very funny~ joke (to make things not-boring)</p><br>
+		<p	id="noSpam">please avoid spamming buttons or clicking the wrong buttons intentionally! thanks very much!</p><br>
+		<h4 class="heading">[ instructions for dummies ]</h4>
+		<p class="instructions">see color <br><br> click button <br><br> 5 clicks = 1 laugh <br><br> no misclicks plis</p><br>
+	</div>
+
+	<div class="middle">
+		<div class="colorBox" id="colorBox">This a hack with dummy text used to make this rectangle. Lumber one programer.</div>
+		<div class="layerOne">
+			<button class="button" id="redButton">red-ish</button>
+			<button class="button" id="greenButton">green-ish</button>
+			<button class="button" id="blueButton">blue-ish</button>
+			<button class="button" id="yellowButton">yellow-ish</button>
+		</div>
+
+		<div class="layerTwo">
+			<button class="button" id="purpleButton">purple-ish</button>
+			<button class="button" id="pinkButton">pink-ish</button>
+			<button class="button" id="orangeButton">orange-ish</button>
+		</div>
+		
+		<div class="layerThree">
+			<button class="button" id="brownButton">brown-ish</button>
+			<button class="button" id="greyButton">grey-ish</button>
+		</div>
+	</div>
+
+	<div class="right">
+		<h4 class="heading">[ what this ]</h4>
+		<p class="instructions">i'm crowdsourcing data for an academic project <br><br><strong>what data -</strong> what rgb value corresponds to what color<br><br>  i need 5000-ish data points<br><br> plis halp ಥ_ಥ</p><br><br>	
+		<h4 class="heading">[ about the project ]</h4>
+		<p class="instructions"><strong>name -</strong>  color classifier <br><br> <strong>what it does -</strong> takes an rgb value and predicts the color <br><br><strong>how -</strong> machine learning </p>
+	</div>
+
+	<div class="bottom">
+		<h4 class="heading">[ v funny joke ]</h4>
+		<div class="joke"></div>
+	</div>
+</body>
+</html>
