@@ -29,18 +29,19 @@ $(document).ready(function(){
 		g = Math.floor(Math.random()*255);
 		b = Math.floor(Math.random()*255);
 		hexColor = rgbToHex(r, g, b);
-		$('.colorBox').css('background-color', hexColor).css('color', hexColor);
+		$('.colorBox').css('background-color', hexColor);
 	}
 	pickColor()
 	// SEND DATA TO FIREBASE & CHANGE BOX COLOR UPON CLICK
-	$('.button').click(function(){
-		data = {
-			r: r,
-			g: g,
-			b: b,
-			label: $(this).html()
-		}
-		let color = ref.push(data)
+		$('.button').click(function(){
+			data = {
+				r: r,
+				g: g,
+				b: b,
+				label: $(this).html()
+			}
+		$('.colorBox').html(jokeCounter);
+		let color = ref.push(data);
 		showJoke(jokeCounter);
 		jokeCounter++;
 		pickColor();

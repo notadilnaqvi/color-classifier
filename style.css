@@ -13,7 +13,7 @@
 body{
 	background-color: rgb(250, 250, 250);
 	height: 100%;
-	padding-top: 5%;
+	padding-top: 3%;
 }
 
 .left{
@@ -128,9 +128,10 @@ h4.heading{
 	width: 80%;
 	height: 150px;
 	border-radius: 5px;
-	color: rgb(200,200,200);
+	color: rgb(255, 255, 255);
 	background-color: rgb(200,200,200);
 	margin: 0% 10%;
+	padding: 10px 10px;
 }
 
 @media only screen and (min-width: 832px){
