@@ -13,12 +13,12 @@ let database = firebase.database();
 let ref = database.ref('colors');
 
 //RECEIVE FIREBASE DATA
-ref.once('value',gotData);
-function gotData(results){
-	let data = results.val();
-	let keys = Object.keys(data);
-	console.log(keys.length);
-}
+// ref.once('value',gotData);
+// function gotData(results){
+// 	let data = results.val();
+// 	let keys = Object.keys(data);
+// 	console.log(keys.length);
+// }
 
 $(document).ready(function(){
 	let r,g,b,data;	
