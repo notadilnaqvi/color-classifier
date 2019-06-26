@@ -1,5 +1,4 @@
 // FIREBASE STUFF
-let keys;
 var firebaseConfig = {
     apiKey: "AIzaSyDAvuUh8M-pT3dsRD0AfhJOr2NNxjgJCR4",
     authDomain: "color-classifier-d9030.firebaseapp.com",
@@ -16,7 +15,9 @@ let ref = database.ref('colors');
 //RECEIVE FIREBASE DATA
 // ref.once('value',gotData);
 // function gotData(results){
-// 	console.log(results.val());
+// 	let data = results.val();
+// 	let keys = Object.keys(data);
+// 	console.log(keys.length);
 // }
 
 $(document).ready(function(){
