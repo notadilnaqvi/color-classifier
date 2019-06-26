@@ -5,6 +5,10 @@
 	font-family: Montserrat;
 }
 
+.meme{
+	width: 300px;
+}
+
 .joke{
 	text-align: center;
 	font-size: 11pt;

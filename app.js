@@ -13,12 +13,12 @@ let database = firebase.database();
 let ref = database.ref('colors');
 
 //RECEIVE FIREBASE DATA
-// ref.once('value',gotData);
-// function gotData(results){
-// 	let data = results.val();
-// 	let keys = Object.keys(data);
-// 	console.log(keys.length);
-// }
+ref.once('value',gotData);
+function gotData(results){
+	let data = results.val();
+	let keys = Object.keys(data);
+	console.log(keys.length);
+}
 
 $(document).ready(function(){
 	let r,g,b,data;	
@@ -43,8 +43,12 @@ $(document).ready(function(){
 			}
 		$('.colorBox').html(jokeCounter);
 		let color = ref.push(data);
-		showJoke(jokeCounter);
+		// showJoke(jokeCounter);
+		showMeme(jokeCounter);
 		jokeCounter++;
+		if(jokeCounter >= 80){
+			jokeCounter = 1;
+		}
 		pickColor();
 	})
 
@@ -59,15 +63,24 @@ $(document).ready(function(){
 	}
 
 	// SHOW JOKE
-	function showJoke(counter){
-		$.get('jokes.txt', function(allJokes) {
-			joke = allJokes.split("\n");
-		});
+	// function showJoke(counter){
+	// 	$.get('jokes.txt', function(allJokes) {
+	// 		joke = allJokes.split("\n");
+	// 	});
 
-		if(counter % 5 == 0){
-			cleanedJoke = joke[Math.floor(counter/5)].slice(1,-2);
-			$('.joke').html(cleanedJoke);
+	// 	if(counter % 5 == 0){
+	// 		cleanedJoke = joke[Math.floor(counter/5)].slice(1,-2);
+	// 		$('.joke').html(cleanedJoke);
 			
+	// 	}
+	// }
+
+	//SHOW MEME
+	function showMeme(counter){
+		if(counter % 3 == 0){
+			let index = Math.floor(counter/3);
+			let imgName = 'memes/' + index + '.jpg';
+			 $('.meme').attr('src',imgName);
 		}
 	}
 })
