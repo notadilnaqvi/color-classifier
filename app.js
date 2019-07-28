@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 let database = firebase.database();
 let ref = database.ref('colors');
 
-//RECEIVE FIREBASE DATA
+// RECEIVE FIREBASE DATA
 // ref.once('value',gotData);
 // function gotData(results){
 // 	let data = results.val();
