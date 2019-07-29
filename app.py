@@ -10,7 +10,7 @@ all_features = all_data.drop('label', axis=1)
 all_lables = all_data['label']
 
 # X_train, X_test, y_train, y_test
-train_features, test_features, train_labels, test_labels = train_test_split(all_features, all_lables, stratify = all_lables, train_size = 0.75, )
+train_features, test_features, train_labels, test_labels = train_test_split(all_features, all_lables, stratify = all_lables, train_size = 0.75)
 # print(type(X_test))
 
 # scaler = StandardScaler()
@@ -22,7 +22,7 @@ train_features, test_features, train_labels, test_labels = train_test_split(all_
 # X_test = scaler.transform(X_test)
 # rgb = [[145, 98, 3], [100, 100, 100]]
 # df = pandas.DataFrame(rgb, columns = ['r', 'g', 'b'])
-mlp = MLPClassifier(hidden_layer_sizes=(5), max_iter=500)
+mlp = MLPClassifier(hidden_layer_sizes=(5), max_iter=500,  learning_rate_init=0.01,  activation='logistic')
 mlp.fit(train_features, train_labels)
 # score = mlp.score(test_features, test_labels)
 # print(score)
